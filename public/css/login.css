@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333;
+}
+div {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 5%; */
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+label{
+  display: flex;
+  justify-content:start;
+  margin-top: 5%;
+  font-size: 15px;
+  font-weight: bold;
+  
+}
+h1{
+  display: flex;
+  font-family: sans-serif;
+  color : palevioletred;
+  margin-top: 3%;
+  justify-content: center;
+  font-weight: bold;
+  
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  color: red; 
+}
+
+a:hover {
+  color: black;
+}
+
+#outer{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+#submitButton{
+  margin-top: 50px;
+  min-width: 15%;
+  padding: 10px;
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(0, 102, 255);
+  border: none;
+  background-color: white;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#submitButton:hover{
+  background-color: aliceblue;
+  color: black;
+  cursor: pointer;
+}
+
+
+form ::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+form{
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}

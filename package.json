@@ -1,0 +1,19 @@
+{
+  "name": "final-project-meronasfaha",
+  "version": "1.0.0",
+  "description": "1. Front End: HTML, CSS, JS\r 2. Backend: NodeJS, Express, nodemon, Restful API\r 3. Data: should save into or load from the file. If you have enough time, you can save data to a database.\r ## Database:\r 1. Customer\r ```JavaScript\r {\r   id: 'C001',//should be unique\r   name: \"John\",\r   username: \"john\",//should be unique\r   phone: \"123\",\r   password: \"123\"\r }\r ```\r 2. Product\r ```JavaScript\r {\r   id: \"001\", //should be unique\r   name: \"Laptop\",\r   price: 700,\r   image: \"https://example.com/laptop.png\"\r }\r ```\r 3. Order\r ```JavaScript\r {\r   id: \"001\", //should be unique\r   createdTime: \"2023-07-13T01:34:39.303Z\",\r   products: [\r     {productId: \"001\", name: \"Laptop\", price: 700, image: \"https://example.com/laptop.png\", quantity: 2}\r   ]\r   totalPrice: 1400, //\r }\r ```\r ## Requirements\r 1. The systems will generate several users at the beginning\r 2. A user can log in using a username or password on the `login` page\r 3. After logging in successfully, this user can see the home page, which satisfies the following requirements.\r * This page shows this user's information, like name and phone.\r * This user can use different buttons to switch between Products, Cart, or Orders. By default, the products will be displayed. The selected button should be highlighted.\r * Products: Display all available products. Each product has a button to add to the cart. When clicking this button, please provide a way to let users enter the number of the selected product.\r * Cart: Display all selected products and a button to check out. If clicking this button, all information from this card will be sent to the server and the cart will be empty.\r * Orders: Show all existing orders that the current users do\r * The app should have a button, `logout`. When users click this button, it will go to the login page.\r 4. Implement a signup page for users to register their accounts. After signing up successfully, this website will redirect to the `login` page. Please provide a button `signup` on the login page. When users click this button, the website redirects to the signup page.\r 5. Provide a way to save the `cart` into the browser by using `localstorage`. This information will be loaded again when this user logs in successfully.\r 6. Please encrypt the password before saving it to files or databases.\r ## Please submit the final and stable version by 10:00 PM, Monday (07/17/2023)\r ## Your group will have 15 minutes to present on Tuesday (07/18/2023). I will send the email for the schedule later. You only need to come in your timetable to illustrate your software.\r ## You need to demonstrate the program and answer my questions. You do not need to prepare any report or ppt documents.\r ******* Happy Coding **********",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
